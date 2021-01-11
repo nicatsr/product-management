@@ -10,12 +10,12 @@ public class ProductDto {
 
     private long photoId;
 
-    @NotBlank
+    @NotBlank(message = "{product.name.notBlank}")
     private String name;
 
     private long categoryId;
 
-    @NotBlank
+    @NotBlank(message = "{product.description.notBlank}")
     private String description;
 
     private MultipartFile photo;
